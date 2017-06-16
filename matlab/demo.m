@@ -88,3 +88,6 @@ fprintf('---     n1,       n2,       n3 ---\n');
 fprintf('---     d1,       d2,       d3 ---\n');
 [ds_t_opt{1}, ds_t_opt{2}, ds_t_opt{3}]
 
+% plot results (non-linear solutions)
+ps_opt = generateMirrorReflections(p_base_opt, ns_t_opt, ds_t_opt, A, num_of_mirror, num_of_reflection, 1);
+plotResults(ns_t_opt, ds_t_opt, ps_opt);
