@@ -12,8 +12,10 @@ end
 
 rep_all = [];
 
-for i_c = 1:num_of_chamber
-  rep_all = [rep_all; norm(qs_rep{i_c} - qs{i_c})];
+for i_chamber = 1:num_of_chamber
+  for i_p = 1:size(qs_rep{1},1)
+    rep_all = [rep_all; norm(qs_rep{i_chamber}(i_p,:) - qs{i_chamber}(i_p,:))];
+  end
 end
-
+  
 rep_ave = mean(rep_all);

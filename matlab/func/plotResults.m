@@ -26,7 +26,7 @@ hold off;
 
 function plotPoints(p)
 
-scale = 0.1;
+scale = 0.05;
 
 for i_p = 1:size(p, 1)
   p_tmp = p(i_p,:);
