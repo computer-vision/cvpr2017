@@ -47,7 +47,7 @@ Then you will see following outputs.
     
         1.0000    0.8602    0.9050
 
-
+In this result, n_i and d_i (i = 1,2,3) denote the mirror normals and distances respectively. Figure 1 visualizes the mirror parameters. The each colored line represents d_i n_i
 
 Note:We tested our codes with Matlab R2016a.
  
