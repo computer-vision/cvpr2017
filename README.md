@@ -7,11 +7,50 @@ This page provides an implementation of our linear extrinsic calibration method 
 
 
 ## Contents
-## How to Use (demo program)
+## How to use the demo program (Matlab)
+After downloading the code and changing the working directory to 'cvpr2017/matlab', please run following command.
 
     demo.m
 
-## How to Use (In a real configuration)
+Then you will see following outputs.
+
+    Average reprojection error by proposed method : 7.529149 pixel.
+    Average reprojection error by proposed method (with non-linear refinement) : 4.427483 pixel.
+    
+    === Parameters by proposed method ===
+    ---     n1,       n2,       n3 ---
+    
+    ans =
+    
+        0.1978   -0.9305    0.7750
+       -0.9772    0.3620    0.6296
+       -0.0770   -0.0553   -0.0547
+    
+    ---     d1,       d2,       d3 ---
+    
+    ans =
+    
+        1.0000    0.7775    0.8656
+    
+    === Parameters by proposed method (with non-linear refinement) ===
+    ---     n1,       n2,       n3 ---
+    
+    ans =
+    
+        0.1976   -0.9298    0.7759
+       -0.9766    0.3602    0.6272
+       -0.0855   -0.0750   -0.0683
+    
+    ---     d1,       d2,       d3 ---
+    
+    ans =
+    
+        1.0000    0.8602    0.9050
+
+Note:We tested our codes with Matlab R2016a.
+ 
+
+## How to use the code with your own configuration)
 ## Citation
 Please cite the paper in your publications if it helps your research:
 
