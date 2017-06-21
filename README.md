@@ -4,7 +4,7 @@ By [Kosuke Takahashi](http://qtarou.github.io/index_en.html), Akihiro Miyata, Sh
 ## Introduction
 This page provides an implementation of our linear extrinsic calibration method of kaleidoscpic imaging system reported in our [CVPR 2017 paper](https://arxiv.org/abs/1703.02826).
 
-### Contact: [Kosuke Takahashi](takahasi.vision@kuee.kyoto-u.ac.jp)
+Contact: [Kosuke Takahashi](takahasi.vision@kuee.kyoto-u.ac.jp)
 
 
 ## How to use the demo program (Matlab)
