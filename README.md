@@ -1,7 +1,11 @@
 # A Linear Extrinsic Calibration of Kaleidoscopic Imaging System
 By [Kosuke Takahashi](http://qtarou.github.io/index_en.html), Akihiro Miyata, Shohei Nobuhara, Takashi Matsuyama (Kyoto University)
 
+## Introduction
 This page provides an implementation of our linear extrinsic calibration method of kaleidoscpic imaging system reported in our [CVPR 2017 paper](https://arxiv.org/abs/1703.02826).
+
+### Contact: [Kosuke Takahashi](takahasi.vision@kuee.kyoto-u.ac.jp)
+
 
 ## How to use the demo program (Matlab)
 After downloading the code and changing the working directory to 'cvpr2017/matlab', please run following command.
