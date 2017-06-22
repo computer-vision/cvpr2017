@@ -47,7 +47,8 @@ Then you will see following outputs.
     
         1.0000    0.8602    0.9050
 
-![Figure 1: Estimated mirror parameters](https://github.com/computer-vision/cvpr2917/wiki/images/result.jpg)
+<img src="https://github.com/computer-vision/cvpr2017/wiki/images/result.jpg" width="480px">
+
 In this result, n_i and d_i (i = 1,2,3) denote the mirror normals and distances respectively. Figure 1 visualizes estimated mirror parameters and 3D positions of a single reference point and its reflections. The each colored line with a legend 'Mirror i' represents a perpendicular line to each mirror, as d_i n_i.
 
 Note:We tested our codes with Matlab R2016a.
