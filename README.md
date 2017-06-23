@@ -89,7 +89,15 @@ corner.txt
     q_32(x) q_32(y) # a 2D coordinate of a projection in M_32      
  
 
-5. Exec the demo program again and you will get the result.
+5. Store the intrinsic parmeters into data/in_params.txt as following format. (We estimated these parameters by zhang's method beforehand.)
+
+    focal_length_x              0 image_center_x
+                 0 focal_length_y image_center_y
+                 0              0              1
+
+
+6. Set the number of mirrors to *num_of_mirror* in demo.m.
+7. Exec the demo program again and you will get the result.
 
 ## Citation
 Please cite the paper in your publications if it helps your research:
