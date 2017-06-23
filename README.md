@@ -4,6 +4,10 @@ By [Kosuke Takahashi](http://qtarou.github.io/index_en.html), Akihiro Miyata, Sh
 ## Introduction
 This page provides an implementation of our linear extrinsic calibration method of kaleidoscpic imaging system reported in our [CVPR 2017 paper](https://arxiv.org/abs/1703.02826).
 
+Our method linearly calibrates a kaleidoscopic imaging system, i.e. estimates mirror normals n_i (i=1,2,3) and distances d_i, from projections of a single 3D point and its reflections q_j (j=1,2,...,32) as in Figure 1. 
+
+Figure 1<img src="https://github.com/computer-vision/cvpr2017/wiki/images/teaser.jpg" width="480px">
+
 Contact: [Kosuke Takahashi](http://qtarou.github.io/index_en.html) (takahasi@vision.kuee.kyoto-u.ac.jp)
 
 
@@ -48,13 +52,13 @@ Then you will see following outputs.
         1.0000    0.8602    0.9050
 
 <img src="https://github.com/computer-vision/cvpr2017/wiki/images/result.jpg" width="480px">
-
-In this result, n_i and d_i (i = 1,2,3) denote the mirror normals and distances respectively. Figure 1 visualizes estimated mirror parameters and 3D positions of a single reference point and its reflections. The each colored line with a legend 'Mirror i' represents a perpendicular line to each mirror, as d_i n_i.
+In this result, n_i and d_i (i = 1,2,3) denote the mirror normals and distances respectively. Figure 2 visualizes estimated mirror parameters and 3D positions of a single reference point and its reflections. The each colored line with a legend 'Mirror i' represents a perpendicular line to each mirror, as d_i n_i.
 
 Note:We tested our codes with Matlab R2016a.
  
 ## How to use the code with your own configuration
 
+<img src="https://github.com/computer-vision/cvpr2017/wiki/images/chamber.jpg" width="240px">
 
 ## Citation
 Please cite the paper in your publications if it helps your research:
