@@ -67,7 +67,7 @@ Figure 3<img src="https://github.com/computer-vision/cvpr2017/wiki/images/chambe
 3. Suppose the 3D points and reflections are projected to *chambers* M_i (i=0,1,2,...) as illustrated in Figure 3. Detect them and obtain the 2D coordinates of them. Note that we assume that captured image is undistorted beforehand. 
 4. Store the 2D coordinates into data/corners.txt as following format.
 
-corner.txt
+data/corener.txt
 
     (in case of using two mirrors)
     q_0(x) q_0(y) # a 2D coordinate of a projection in M_0      
@@ -90,6 +90,8 @@ corner.txt
  
 
 5. Store the intrinsic parmeters into data/in_params.txt as following format. (We estimated these parameters by zhang's method beforehand.)
+
+data/in_params.txt
 
     focal_length_x              0 image_center_x
                  0 focal_length_y image_center_y
