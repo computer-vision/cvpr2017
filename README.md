@@ -51,14 +51,45 @@ Then you will see following outputs.
     
         1.0000    0.8602    0.9050
 
-<img src="https://github.com/computer-vision/cvpr2017/wiki/images/result.jpg" width="480px">
+Figure 2<img src="https://github.com/computer-vision/cvpr2017/wiki/images/result.jpg" width="480px">
+
 In this result, n_i and d_i (i = 1,2,3) denote the mirror normals and distances respectively. Figure 2 visualizes estimated mirror parameters and 3D positions of a single reference point and its reflections. The each colored line with a legend 'Mirror i' represents a perpendicular line to each mirror, as d_i n_i.
 
 Note:We tested our codes with Matlab R2016a.
  
 ## How to use the code with your own configuration
+In order to calibrate your own system, please follow the process below. In short, after updating data/corners.txt and data/in_params.txt, run the demo program. Note that we assume that the kaleidoscopic imaging system is consists of **two or three** mirrors.
 
-<img src="https://github.com/computer-vision/cvpr2017/wiki/images/chamber.jpg" width="240px">
+Figure 3<img src="https://github.com/computer-vision/cvpr2017/wiki/images/chamber.jpg" width="480px">
+
+1. Suppose you have a camera C and a kaleidoscopic imaging system consists of three mirrors pi_1, pi_2 and pi_3.
+2. Capture a single 3D point and its reflections.
+3. Suppose the 3D points and reflections are projected to *chambers* M_i (i=0,1,2,...) as illustrated in Figure 3. Detect them and obtain the 2D coordinates of them. Note that we assume that captured image is undistorted beforehand. 
+4. Store the 2D coordinates into data/corners.txt as following format.
+
+corner.txt
+
+    (in case of using two mirrors)
+    q_0(x) q_0(y) # a 2D coordinate of a projection in M_0      
+    q_1(x) q_1(y) # a 2D coordinate of a projection in M_1      
+    q_2(x) q_2(y) # a 2D coordinate of a projection in M_2      
+    q_12(x) q_12(y) # a 2D coordinate of a projection in M_12      
+    q_21(x) q_21(y) # a 2D coordinate of a projection in M_21  
+    
+    (in case of using three mirrors)
+    q_0(x) q_0(y) # a 2D coordinate of a projection in M_0      
+    q_1(x) q_1(y) # a 2D coordinate of a projection in M_1      
+    q_2(x) q_2(y) # a 2D coordinate of a projection in M_2      
+    q_3(x) q_3(y) # a 2D coordinate of a projection in M_3      
+    q_12(x) q_12(y) # a 2D coordinate of a projection in M_12      
+    q_13(x) q_13(y) # a 2D coordinate of a projection in M_13      
+    q_21(x) q_21(y) # a 2D coordinate of a projection in M_21      
+    q_23(x) q_23(y) # a 2D coordinate of a projection in M_23      
+    q_31(x) q_31(y) # a 2D coordinate of a projection in M_31      
+    q_32(x) q_32(y) # a 2D coordinate of a projection in M_32      
+ 
+
+5. Exec the demo program again and you will get the result.
 
 ## Citation
 Please cite the paper in your publications if it helps your research:
