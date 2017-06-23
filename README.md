@@ -58,7 +58,7 @@ In this result, n_i and d_i (i = 1,2,3) denote the mirror normals and distances 
 Note:We tested our codes with Matlab R2016a.
  
 ## How to use the code with your own configuration
-In order to calibrate your own system, please follow the process below. In short, after updating data/corners.txt and data/in_params.txt, run the demo program. Note that we assume that the kaleidoscopic imaging system is consists of **two or three** mirrors.
+In order to calibrate your own system, please follow the process below. In short, after updating data/corners.txt and data/in_params.txt, run the demo program. Note that we assume that the kaleidoscopic imaging system is consists of **two** or **three** mirrors.
 
 Figure 3<img src="https://github.com/computer-vision/cvpr2017/wiki/images/chamber.jpg" width="480px">
 
