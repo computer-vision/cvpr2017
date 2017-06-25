@@ -6,8 +6,8 @@ This page provides an implementation of our linear extrinsic calibration method 
 
 Our method linearly calibrates a kaleidoscopic imaging system, i.e. estimates mirror normals n_i (i=1,2,3) and distances d_i, from projections of a single 3D point and its reflections q_j (j=1,2,...,32) as in Figure 1. 
 
+##### Figure 1
 <img src="https://github.com/computer-vision/cvpr2017/wiki/images/teaser.jpg" width="480px" title="Figure 1">
-Figure 1
 
 
 Contact: [Kosuke Takahashi](http://qtarou.github.io/index_en.html) (takahasi@vision.kuee.kyoto-u.ac.jp)
@@ -53,8 +53,9 @@ Then you will see following outputs.
 
         1.0000    0.9569    0.8488
 
+##### Figure 2
 <img src="https://github.com/computer-vision/cvpr2017/wiki/images/result.jpg" width="480px">
-Figure 2
+
 
 In this result, n_i and d_i (i = 1,2,3) denote the mirror normals and distances respectively. Figure 2 visualizes estimated mirror parameters and 3D positions of a single reference point and its reflections. The each colored line with a legend 'Mirror i' represents a perpendicular line to each mirror, as d_i n_i.
 
@@ -63,8 +64,8 @@ Note:We tested our codes with Matlab R2016a.
 ## How to use the code with your own configuration
 In order to calibrate your own system, please follow the process below. In short, after updating data/corners.txt and data/in_params.txt, run the demo program. Note that we assume that the kaleidoscopic imaging system is consists of **two** or **three** mirrors.
 
+##### Figure 3
 <img src="https://github.com/computer-vision/cvpr2017/wiki/images/chamber.jpg" width="480px">
-Figure 3
 
 1. Suppose you have a camera and a kaleidoscopic imaging system consists of two or three mirrors.
 2. Capture a single 3D point and its reflections.
