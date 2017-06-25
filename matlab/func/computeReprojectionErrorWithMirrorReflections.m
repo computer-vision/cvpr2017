@@ -14,7 +14,8 @@ rep_all = [];
 
 for i_chamber = 1:num_of_chamber
   for i_p = 1:size(qs_rep{1},1)
-    rep_all = [rep_all; norm(qs_rep{i_chamber}(i_p,:) - qs{i_chamber}(i_p,:))];
+    rep = norm(qs_rep{i_chamber}(i_p,:) - qs{i_chamber}(i_p,:));
+    rep_all = [rep_all; rep];
   end
 end
   

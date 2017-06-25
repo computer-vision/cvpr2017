@@ -36,9 +36,6 @@ close all;
 
 addpath('./func');
 
-model_row = 5;
-model_col = 8;
-model_size = 4.45;
 num_of_mirror = 3;
 
 A = load('../data/in_params.txt');
@@ -55,9 +52,7 @@ end
 % Non-linear solution
 [ns_t_opt ds_t_opt] = optimizeMirrorParameters(input, A, ns_t, ds_t);
 
-
 %%%%%%%%%%%%%%% Evaluation %%%%%%%%%%%%%%%%%
-
 num_of_reflection = 2; % for evaluation of reprojection error
 % Reprojection error for linear solution
 p_base = computeTriangulationWithMirrorReflection(input, ns_t, ds_t, A, num_of_mirror);
@@ -68,7 +63,6 @@ p_base = computeTriangulationWithMirrorReflection(input, ns_t, ds_t, A, num_of_m
 p_base_opt = computeTriangulationWithMirrorReflection(input, ns_t_opt, ds_t_opt, A, num_of_mirror);
 [rep_ave_opt rep_all_opt] = computeReprojectionErrorWithMirrorReflections(...
     p_base_opt, input, ns_t_opt, ds_t_opt, A, num_of_mirror, num_of_reflection);
-
 
 %%%%%%%%%%%%%%% Results %%%%%%%%%%%%%%%%%
 fprintf('\n');

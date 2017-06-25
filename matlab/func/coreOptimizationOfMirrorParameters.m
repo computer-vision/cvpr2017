@@ -18,6 +18,9 @@ for i_chamber = 1:size(ps, 2)
   qs_rep{i_chamber} = projectToImagePlane(ps{i_chamber}, A);
 end
 
-for i_c = 1:num_of_chamber
-  F = [F; norm(qs_rep{i_c} - qs{i_c})];
+for i_chamber = 1:num_of_chamber
+  for i_p = 1:size(qs_rep{1},1)
+    rep = power(norm(qs_rep{i_chamber}(i_p,:) - qs{i_chamber}(i_p,:)), 2);
+    F = [F; rep];
+  end
 end
