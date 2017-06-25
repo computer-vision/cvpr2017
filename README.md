@@ -18,38 +18,38 @@ After downloading the code and changing the working directory to 'cvpr2017/matla
 
 Then you will see following outputs.
 
-    Average reprojection error by proposed method : 7.529149 pixel.
-    Average reprojection error by proposed method (with non-linear refinement) : 4.427483 pixel.
+    Average reprojection error by proposed method : 7.283709 pixel.
+    Average reprojection error by proposed method (with non-linear refinement) : 4.031378 pixel.
     
     === Parameters by proposed method ===
     ---     n1,       n2,       n3 ---
     
     ans =
     
-        0.1978   -0.9305    0.7750
-       -0.9772    0.3620    0.6296
-       -0.0770   -0.0553   -0.0547
-    
+        0.1979   -0.9305    0.7749
+       -0.9772    0.3621    0.6297
+       -0.0770   -0.0550   -0.0545
+
     ---     d1,       d2,       d3 ---
-    
+
     ans =
-    
-        1.0000    0.7775    0.8656
-    
+
+        1.0000    0.7756    0.8645
+
     === Parameters by proposed method (with non-linear refinement) ===
     ---     n1,       n2,       n3 ---
-    
+
     ans =
-    
-        0.1976   -0.9298    0.7759
-       -0.9766    0.3602    0.6272
-       -0.0855   -0.0750   -0.0683
-    
+
+        0.1989   -0.9283    0.7768
+       -0.9764    0.3609    0.6271
+       -0.0837   -0.0893   -0.0575
+
     ---     d1,       d2,       d3 ---
-    
+
     ans =
-    
-        1.0000    0.8602    0.9050
+
+        1.0000    0.9569    0.8488
 
 Figure 2<img src="https://github.com/computer-vision/cvpr2017/wiki/images/result.jpg" width="480px">
 
@@ -62,7 +62,7 @@ In order to calibrate your own system, please follow the process below. In short
 
 Figure 3<img src="https://github.com/computer-vision/cvpr2017/wiki/images/chamber.jpg" width="480px">
 
-1. Suppose you have a camera C and a kaleidoscopic imaging system consists of three mirrors pi_1, pi_2 and pi_3.
+1. Suppose you have a camera and a kaleidoscopic imaging system consists of two or three mirrors.
 2. Capture a single 3D point and its reflections.
 3. Suppose the 3D points and reflections are projected to *chambers* M_i (i=0,1,2,...) as illustrated in Figure 3. Detect them and obtain the 2D coordinates of them. Note that we assume that captured image is undistorted beforehand. 
 4. Store the 2D coordinates into data/corners.txt as following format.
