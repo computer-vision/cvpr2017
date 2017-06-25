@@ -6,7 +6,8 @@ This page provides an implementation of our linear extrinsic calibration method 
 
 Our method linearly calibrates a kaleidoscopic imaging system, i.e. estimates mirror normals n_i (i=1,2,3) and distances d_i, from projections of a single 3D point and its reflections q_j (j=1,2,...,32) as in Figure 1. 
 
-Figure 1<img src="https://github.com/computer-vision/cvpr2017/wiki/images/teaser.jpg" width="480px">
+<img src="https://github.com/computer-vision/cvpr2017/wiki/images/teaser.jpg" width="480px" title="Figure 1">
+Figure 1
 
 Contact: [Kosuke Takahashi](http://qtarou.github.io/index_en.html) (takahasi@vision.kuee.kyoto-u.ac.jp)
 
